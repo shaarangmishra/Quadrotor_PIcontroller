@@ -1,0 +1,9 @@
+  
+<?xml version="1.0"?>
+
+<launch>
+
+  <node pkg="rosservice" type="rosservice" name="rosservice" args="call /enable_motors 'enable: true'"/>
+  <node pkg="rescue_solution" type="pcontroller_base.py" name="pcontroller_base" output = "screen"/>
+
+</launch>
